@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   # Configure Firefox
   programs.firefox = {
     enable = true;
@@ -8,6 +12,7 @@
     profiles = {
       aam = {
         isDefault = true;
+        extensions = lib.attrValues (import ./addons.nix {inherit (pkgs) lib stdenv fetchurl;});
         settings = {
           # Disable irritating first-run stuff
           "browser.disableResetPrompt" = true;
@@ -42,6 +47,9 @@
             # Twitter
             "T9nJot5PurhJSy8n038xGA=="
           ] (_: 1);
+
+          # Auto enable installed extensions
+          "extensions.autoDisableScopes" = 0;
 
           # Fully disable Mozilla Pocket
           "extensions.pocket.enabled" = false;
