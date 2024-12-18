@@ -7,6 +7,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
 
     # Include submodules
+    ./fonts
     ./hardware
     ./hyprland
     ./sddm
