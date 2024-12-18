@@ -1,5 +1,6 @@
 {
   modulesPath,
+  pkgs,
   user,
   ...
 }: {
@@ -29,6 +30,8 @@
   users.users.${user} = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.fish;
+    ignoreShellProgramCheck = true;
   };
 
   # This value determines the NixOS release from which the default
