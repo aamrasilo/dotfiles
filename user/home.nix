@@ -1,4 +1,8 @@
-{user, ...}: {
+{
+  pkgs,
+  user,
+  ...
+}: {
   imports = [
     # Include submodules
     ./firefox
@@ -17,6 +21,11 @@
     username = user;
     homeDirectory = "/home/${user}";
   };
+
+  # Packages
+  home.packages = with pkgs; [
+    ripgrep
+  ];
 
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
