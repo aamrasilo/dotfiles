@@ -15,6 +15,9 @@
       cmd_duration = {
         disabled = true;
       };
+      git_branch = {
+        symbol = " ";
+      };
     };
   };
 }
