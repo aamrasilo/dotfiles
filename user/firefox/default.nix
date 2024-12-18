@@ -1,4 +1,4 @@
-{
+{lib, ...}: {
   # Configure Firefox
   programs.firefox = {
     enable = true;
@@ -20,6 +20,25 @@
           "trailhead.firstrun.didSeeAboutWelcome" = true;
           "browser.bookmarks.restore_default_bookmarks" = false;
           "browser.bookmarks.addedImportButton" = true;
+
+          # Disable crappy home activity stream page
+          "browser.newtabpage.activity-stream.feeds.topsites" = false;
+          "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+          "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts" = false;
+          "browser.newtabpage.blocked" = lib.genAttrs [
+            # Youtube
+            "26UbzFJ7qT9/4DhodHKA1Q=="
+            # Facebook
+            "4gPpjkxgZzXPVtuEoAL9Ig=="
+            # Wikipedia
+            "eV8/WsSLxHadrTL1gAxhug=="
+            # Reddit
+            "gLv0ja2RYVgxKdp0I5qwvA=="
+            # Amazon
+            "K00ILysCaEq8+bEqV/3nuw=="
+            # Twitter
+            "T9nJot5PurhJSy8n038xGA=="
+          ] (_: 1);
         };
       };
     };
