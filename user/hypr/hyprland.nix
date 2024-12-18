@@ -70,6 +70,7 @@
         "$mod, 4, workspace, 4"
         "$mod, 5, workspace, 5"
         "$mod, 6, workspace, 6"
+        "$mod, S, togglespecialworkspace, magic"
 
         # Move active window to a workspace with $modShift + num key
         "$modShift, 1, movetoworkspacesilent, 1"
@@ -78,6 +79,7 @@
         "$modShift, 4, movetoworkspacesilent, 4"
         "$modShift, 5, movetoworkspacesilent, 5"
         "$modShift, 6, movetoworkspacesilent, 6"
+        "$modShift, S, movetoworkspacesilent, special:magic"
 
         # Scroll through existing workspaces with $mod + Comma / Period
         "$mod, Comma, workspace, e-1"
