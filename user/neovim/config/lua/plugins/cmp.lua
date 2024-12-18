@@ -3,9 +3,20 @@ return {
   event = { "InsertEnter", "CmdlineEnter" },
   config = function()
     local cmp = require("cmp")
+    local lspkind = require("lspkind")
 
     -- Set up nvim-cmp.
     cmp.setup({
+      formatting = {
+        format = lspkind.cmp_format({
+          mode = "symbol_text",
+          maxwidth = {
+            menu = 50,
+            abbr = 50,
+          },
+          ellipsis_char = "...",
+        }),
+      },
       mapping = cmp.mapping.preset.insert({
         ["<C-e>"] = cmp.mapping.abort(),
         ["<C-b>"] = cmp.mapping.scroll_docs(-4),
