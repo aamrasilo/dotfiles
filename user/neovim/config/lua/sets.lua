@@ -11,3 +11,6 @@ vim.opt.expandtab = true
 -- Undo
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+-- Always draw sign column
+vim.opt.signcolumn = "yes"
