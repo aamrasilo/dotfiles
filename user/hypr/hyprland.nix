@@ -31,6 +31,17 @@
         shadow.enabled = false;
       };
 
+      # Animations
+      animations = {
+        enabled = true;
+        animation = [
+          "global, 1, 3, default"
+          "windowsIn, 1, 3, default, popin 70%"
+          "windowsOut, 1, 3, default, popin 70%"
+          "workspaces, 0"
+        ];
+      };
+
       # Misc
       misc = {
         disable_hyprland_logo = true;
