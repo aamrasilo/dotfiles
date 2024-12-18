@@ -64,6 +64,22 @@
           "browser.newtabpage.activity-stream.section.highlights.includePocket" = false;
           "services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket" =
             false;
+
+          # Layout
+          "browser.uiCustomization.state" = builtins.toJSON {
+            currentVersion = 20;
+            newElementCount = 2;
+            dirtyAreaCache = ["nav-bar" "PersonalToolbar" "toolbar-menubar" "TabsToolbar" "widget-overflow-fixed-list"];
+            placements = {
+              PersonalToolbar = ["personal-bookmarks"];
+              TabsToolbar = ["tabbrowser-tabs" "new-tab-button" "alltabs-button"];
+              nav-bar = ["back-button" "forward-button" "stop-reload-button" "urlbar-container" "downloads-button" "touch-vpn_anchorfree_com-browser-action" "unified-extensions-button"];
+              toolbar-menubar = ["menubar-items"];
+              unified-extensions-area = [];
+              widget-overflow-fixed-list = [];
+            };
+            seen = ["save-to-pocket-button" "developer-button" "sponsorblocker_ajay_app-browser-action" "firefox_tampermonkey_net-browser-action" "touch-vpn_anchorfree_com-browser-action" "ublock0_raymondhill_net-browser-action"];
+          };
         };
       };
     };
