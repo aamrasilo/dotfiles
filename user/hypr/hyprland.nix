@@ -62,6 +62,7 @@
 
         # Manage active window
         "$mod, Q, killactive"
+        "$mod, F, togglefloating"
 
         # Switch to a workspace with $mod + num key
         "$mod, 1, workspace, 1"
