@@ -58,6 +58,7 @@
       bind = [
         # Launch apps
         "$mod, B, exec, firefox"
+        "$mod, K, exec, nemo"
         "$mod, Return, exec, foot"
         "$modShift, Return, exec, fuzzel"
 

@@ -26,6 +26,7 @@
 
   # Packages
   home.packages = with pkgs; [
+    nemo
     ripgrep
   ];
 
