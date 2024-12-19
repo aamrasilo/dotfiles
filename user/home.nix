@@ -14,6 +14,7 @@
     ./gammastep.nix
     ./git.nix
     ./gtk.nix
+    ./mako.nix
     ./ssh.nix
   ];
 
