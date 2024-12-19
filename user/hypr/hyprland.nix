@@ -81,6 +81,12 @@
         "$modShift, 6, movetoworkspacesilent, 6"
         "$modShift, S, movetoworkspacesilent, special:magic"
 
+        # Switch focus to next window with $mod + H / J / K / L
+        "$mod, H, movefocus, l"
+        "$mod, J, movefocus, d"
+        "$mod, K, movefocus, u"
+        "$mod, L, movefocus, r"
+
         # Scroll through existing workspaces with $mod + Comma / Period
         "$mod, Comma, workspace, e-1"
         "$mod, Period, workspace, e+1"
