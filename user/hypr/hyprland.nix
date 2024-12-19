@@ -59,6 +59,7 @@
         # Launch apps
         "$mod, B, exec, firefox"
         "$mod, Return, exec, foot"
+        "$modShift, Return, exec, fuzzel"
 
         # Manage active window
         "$mod, Q, killactive"

@@ -10,6 +10,7 @@
     ./neovim
     ./terminal
     ./eza.nix
+    ./fuzzel.nix
     ./gammastep.nix
     ./git.nix
     ./gtk.nix
