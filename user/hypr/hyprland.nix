@@ -84,6 +84,10 @@
         # Scroll through existing workspaces with $mod + Comma / Period
         "$mod, Comma, workspace, e-1"
         "$mod, Period, workspace, e+1"
+
+        # Change sound volume with $mod + N / M
+        "$mod, N, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+        "$mod, M, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ];
     };
   };
