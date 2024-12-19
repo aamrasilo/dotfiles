@@ -59,6 +59,7 @@
         # Launch apps
         "$mod, B, exec, firefox"
         "$mod, K, exec, nemo"
+        "$mod, T, exec, telegram-desktop"
         "$mod, Return, exec, foot"
         "$modShift, Return, exec, fuzzel"
 

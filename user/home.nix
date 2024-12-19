@@ -28,6 +28,7 @@
   home.packages = with pkgs; [
     nemo
     ripgrep
+    telegram-desktop
   ];
 
   # Let Home Manager install and manage itself
