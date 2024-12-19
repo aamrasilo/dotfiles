@@ -14,3 +14,8 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 -- Always draw sign column
 vim.opt.signcolumn = "yes"
+
+-- Diagnostic config
+vim.diagnostic.config({
+  severity_sort = true,
+})
