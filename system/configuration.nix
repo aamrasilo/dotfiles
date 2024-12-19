@@ -12,6 +12,7 @@
     ./hardware
     ./hyprland
     ./sddm
+    ./android.nix
     ./boot.nix
     ./filesystems.nix
     ./localization.nix
